@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<!--Editor: Johnson Gao
+Date This Project Created:
+Description Of This Class:
+-->
+<html>
+    <head>
+        <title>About residential life</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/MainCss.css" type="text/css" rel="stylesheet">
+        <script src="javascript/mainjs.js"></script>
+    </head><!--https://fontmeme.com/permalink/191122/f48d716ff5127134be8463a815980924.png-->
+    <body>
+
+        <img src="https://fontmeme.com/permalink/191122/f48d716ff5127134be8463a815980924.png" id="titleImage" alt="Never Join RL">
+
+        <section class="bodycontent" id="aboutSchool">
+            <h3><img src="images/smicon/smrdflag.svg" alt="">About Our School<img src="images/smicon/smrdflag.svg" alt=""></h3>
+            <table>
+                <tr>
+                    <td>
+                        The following content come from the <i><a href="https://www.nordangliaeducation.com/our-schools/houston/village-school/our-school">official website</a></i> of the school
+                        <br>The Village School is a coeducational,
+                        non-denominational college preparatory private school for Pre-K 2 through 12 grades located in the Energy Corridor of West Houston.
+                        Village is also proud member of the Nord Anglia Education network of schools. Through open collaboration with people from varied cultures, 
+                        languages, and values, our students are encouraged and expected to make a positive impact on those around them.<br>
+                        <strong class="red">TIP: The village school itself is a good school, but RESIDENTIAL LIFE IS NOT WORTH HOW MUCH IT COSTS</strong>
+                    </td>
+                    <td>
+                        <figure>
+                            <img src ="images/VIL.jpg" alt="the village school">
+                            <figcaption>
+                                If you wish to apply for our school, it is highly recommended that you apply for <strong class="red">DAY STUDENT</strong> instead of <strong>RESIDENTIAL LIFE</strong>.
+                            </figcaption>
+                        </figure>
+
+                    </td>
+                </tr>
+
+
+            </table>
+
+
+        </section>
+
+
+
+        <section class="bodycontent" id="COVID19">
+            <h3>
+                COVID-19 & our dorm
+            </h3>
+            <p>
+
+                As you can see from the first image, the students were highly concentrated in a small area waiting in line. This line would have been much longer since I came out very late while telling the RA about my coronavirus concerns. This would have been a serious health risk due to the fact that so many people were forced to be in a small area.
+                The second image shows a "required" meeting. Which just annouced things that can be completed express within a email but greatly increased the risk.
+                <button class="arrowbutton" onclick="showCOVID19IMG();"><span>See images</span></button>
+            </p>
+
+            <img height="367" id="covid-img-1" class="hide2" src="images/0.jpg">
+            <img height="367" id="covid-img-2" class="hide2" src="images/0_1.jpg">
+        </section>
+
+        <section class="bodycontent" id="aboutRL1">
+            <h3>
+                <img src="images/smicon/smrdflag.svg" alt="">About Res Life<img src="images/smicon/smrdflag.svg" alt="">
+            </h3>
+            <p>
+                The boarding program(Residential Life) is a part of the village school, which offers students a place to rest.
+                With the residential life program, you can enjoy the following benefits:
+            </p>
+
+            <ol class="starredList">
+                <li>
+                    <span onclick="showHiddenText('dormclosehiddentext')" class="hiddenTextButton"><u>The dorm is close to the high school building.</u></span> 
+                    <span class="hiddenTexts" id="dormclosehiddentext"><img src="images/smicon/smheart.svg" alt="❤">However, You are not allowed to come back to the dorm during school hours or lunch</span>
+                </li>
+                <li>
+                    <u onclick="showHiddenText('liveWithFriendsHiddenText')" class="hiddenTextButton">You can live with your friends.</u> <span class="hiddenTexts" id="liveWithFriendsHiddenText"><img src="images/smicon/smheart.svg" alt="❤">However, this is a case-by-case situation: if you like to socialize with a large group of friends, this feature will be a benefit for you. Else, the RL is an annoying place to stay.</span>
+                </li>
+                <li>
+                    <u onclick="showHiddenText('facilityHiddenText')" class="hiddenTextButton">You can use some school facilities, like the gym.</u> 
+                    <span class="hiddenTexts" id="facilityHiddenText">
+                        <img src="images/smicon/smheart.svg" alt="❤">However, they only open at certain times, and it is usually crowdy.<br>
+                        <img src="images/smicon/smrdtriangle.svg" alt="△">Also, you may not use the playground whenever you want because sports games may take place there, and there are some security issues.
+                        <br><img src="images/crowdgym.jpg" id="crowdgymImg" alt="crowded gym">
+                    </span>
+                </li>
+            </ol>
+
+        </section>
+
+        <div class="bodycontent">
+            <img src="images/APPLYDAY.png" alt="APPLY FOR DAY STUDENTS" id="applydayImg">
+        </div>    
+
+        <section class="bodycontent" id="badAds">
+            <h4>
+                <img src="images/smicon/smrdflag.svg" alt="">Some Bad Advertisements<img src="images/smicon/smrdflag.svg" alt="">
+            </h4>
+            <a href="https://img.nordangliaeducation.com/resources/us/_filecache/136/7a9/42301-7-day-boarding-tuition.pdf" target="about:blank">
+                <img src="images/boarding7day.png" alt="7 days boarding include list" id="boardingDocImg" title="click to see original document">
+            </a>
+            According to the official website of the village school, 
+            this program includes
+
+            <ol class="starredList">
+                <li>
+                    <u class="hiddenTextButton" onclick="showHiddenText('tuitionIncludeMeal')">meals each day</u>
+                    <br><div class="hiddenTexts" id="tuitionIncludeMeal">
+                        This only includes the cafeteria(Flik food) but the flavor of the food is usually not perferrable.
+                        Also by becoming a boarding student, you lose your freedom of choice.
+                    </div>
+
+                </li>
+
+
+                <!--Access to school facility-->
+                <li>
+                    <u class="hiddenTextButton" onclick="showHiddenText('tuitionFeeIncludeSchoolFacility')">full access to all school facilities,</u>
+                    <span class="hiddenTexts" id="tuitionFeeIncludeSchoolFacility">
+                        <br><img src="images/smicon/smheart.svg" alt="❤">The majority of the school facility are good, but <strong>day students also have the right to access.</strong><br>
+                        <span class="black"><img src="images/smicon/smrdtriangle.svg" alt="△">What are some examples that only RL students can access? Gym? No! Why? <a href="#facilityHiddenText" onclick="showHiddenText('facilityHiddenText')"> Seeabove!</a>.It sounds like the RL students have a lot of rights but actually not.</span>
+                    </span>
+                </li>
+
+                <!--Laundry service-->
+                <li>
+                    <div class="">
+                        <u class="hiddenTextButton" onclick="showHiddenText('tuitionFeeIncludeLaundry')" >laundry services,</u> 
+                        <div class="hiddenTexts" id="tuitionFeeIncludeLaundry">
+                            <br> <img src="images/smicon/smheart.svg" alt="❤">Laundry service is included in the fee, but <u>we can call laundry service by ourselves at better price and quality</u>, provided by Tide if we live out.
+                        </div>
+                    </div>
+                </li>
+
+                <li class="">
+                    <u class="hiddenTextButton" onclick="showHiddenText('tuitionIncludeAdvise')">academic and personal advising</u>
+                    <div class="hiddenTexts" id="tuitionIncludeAdvise">
+                        <br> <img src="images/smicon/smheart.svg" alt="❤">The residential life student has no exclusive rights in academic advising. Oppositely, dorm parents usually are not able to offer advice in academics. People lose chances of getting other opportunities for help, such as homework help from the host family. Occasionally,  there are some teachers come in the dorm and able to offer tutorial for students.
+                        <br><img src="images/smicon/smrdtriangle.svg" alt="△"><span class="black">The excellent resource of our school: emotional counselor and college counseling are <strong>open to day students</strong> as well, and everyone gets equal opportunities.
+                            <br><img src="images/smicon/smgreentick.svg" alt="✔">Tuturials are offered often during office hours:  after school 3:30 - 4:00 and is <strong>open to all students</strong></span>
+                    </div>
+                </li>
+
+                <li>
+                    <u class="hiddenTextButton" onclick="showHiddenText('tuitionFeeIncludeTrip')">
+                        Trips on weekends and school breaks.
+                    </u>
+                    <div class="hiddenTexts" id="tuitionFeeIncludeTrip">
+                        <br> <img src="images/smicon/smheart.svg" alt="❤">
+                        Trips that are actually valueable for us is to the target, but if we live by ourselves, we can call uber instead of rushing into a bus.
+                        Also, a seat on the bus should not be so costy.
+                        <br><span class="black"><img src="images/smicon/smrdtriangle.svg" alt="△">Sometimes we have some big trips like the one to the houston space center, spring brake trip etc. but
+                            it should not be as expensive as listed, as we are travel usually in an economy time and in a group.</span>
+                        <br><span class="black">
+                            <img src="images/smicon/smrdtriangle.svg" alt="△">
+                            According to the feed back of 2019-2020, the trip was not arranged in a way that people perfer.
+                            If you like being active, travel with a huge group of friends and socialize, this trip is an good 
+                            for you. If you just want to chill down and relax, this is a jail.
+                            <br>
+                            <img src="images/smicon/redstar.svg" alt="redstar">300 kids was called to an empty space and given a small
+                            volley ball space, only few students can play,
+                            rest of the students did nothing.
+                            <br>
+                            <img src="images/smicon/redstar.svg" alt="redstar">In order to save money, the school has booked stopping flight and people wasted 2 days on flight.
+                            <br>
+                            <img src="images/rltksgiving.jpg" class="centralizedImage" id="rlThanksGivingImage" alt="thanksgivingImage">
+                        </span>
+                    </div>
+
+                </li>
+
+                <li>
+                    <u class="hiddenTextButton" onclick="showHiddenText('tuitionIncludeAirport')">
+                        airport transportation
+                    </u>
+                    <br><div class="hiddenTexts" id="tuitionIncludeAirport">
+                        <img src="images/smicon/smheart.svg" alt="❤">This only applies to group activity. Need to wait for group, crowded.
+                    </div>
+                </li>
+
+                <!--Technology-->
+                <li>
+                    <u class="hiddenTextButton" onclick="showHiddenText('tuitionIncludeTech')">
+                        and all needed technology</u>
+                    <br><div class="hiddenTexts" id="tuitionIncludeTech">
+                        <img src="images/smicon/smheart.svg" alt="❤">
+                        <span class="red">This is a lie! A COMPLETE LIE</span>
+                        The fact is: when you come into the school they will hand you a LG old phone, an 11 inch mini laptop and it is slow.
+                        And this only happens in the first year.
+                        The "technology" school give you is bad, NOT WORTH IT!
+                        The following years nothing will be given to you and you still hand equal tuition.
+                        What they give to you completely unable to payback what you pay them.
+                        <br><span class="black"><img src="images/smicon/smrdtriangle.svg" alt="△"> The majority of students <strong>purchase their own laptops.</strong></span>
+
+                    </div>
+                </li>
+
+                <li>
+                    as well as <u class="hiddenTextButton" onclick="showHiddenText('tuitionaFeeIncludesInsurance')"> student health insurance.</u>
+                    <span class="hiddenTexts" id="tuitionaFeeIncludesInsurance">You can get better insurance by yourself.
+                        <br>
+                        <span class="black" id="studentHealthInsureance">
+                            <img src="images/smicon/smrdtriangle.svg" alt="△">Usually dorm parents are not able to offer as much help in medication as you might have expected.<br> 
+                            Real Example: There was a student getting sick in the dorm, but the dorm parent asked her to <strong>drink coke</strong>.
+                        </span>
+                        <br><img src="images/evilcoke.jpg" class="centralizedImage" alt="evil coke">
+                    </span>
+                </li>
+            </ol>
+
+            <br>Some limits apply. Click on each one to see.<img src="images/smicon/onclicksm1.svg" alt="">                                                  
+            <a href="https://img.nordangliaeducation.com/resources/us/_filecache/136/7a9/42301-7-day-boarding-tuition.pdf" target="about:blank">See Original document</a>
+        </section>
+
+        <img class="centralizedImage intersectionalImage bodycontent" src="https://fontmeme.com/permalink/191124/f0b587ba8016a57d47be81844d60a757.png" alt="never join res life">
+
+        <section class="bodycontent" id="dboubtRL">
+
+            <h3>
+                <img src="images/smicon/smrdflag.svg" alt="">Some Doubts About RL<img src="images/smicon/smrdflag.svg" alt="">
+            </h3>
+
+            <h4>
+                The dorm is not a bad dorm, it just not worth how much it costs.
+            </h4>
+            <!--Noise,  Politic, pricvacy, atmosphere-->
+            <table>
+                <!--Noise-->
+                <tr>
+                    <td>
+                        <!--Title-->
+                        <label>
+                            <img src="images/smicon/sad32.svg" alt="sad">
+                            <img src="images/title/noise.png" alt="Noise">
+                        </label>
+
+                        <!--Paragraph-->
+                        <p>
+                            A loud environment is hard for a student to concentrate and study,
+                            especially when people become aggressive and rude when you try to stop them.
+                            Also, there is little studying atmosphere in the dorm,
+                            it interrupts other students to study.
+                            It can give one pressure and affect their grade.
+                            The school put 8 persons in a room, and in most of the rooms, people scream and game.
+                            When people game, they get really excited and cannot control their volumn.
+                            Also people run and play basketball in the corridor.
+                        </p>
+                    </td>
+
+                    <td>
+                        <img src="images/loud.jpg" alt="loud" title="really unacceptable interruption">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>
+                            <img src="images/smicon/sad32.svg" alt="☹">
+                            <img src="https://fontmeme.com/permalink/191124/de24a2f2e80f9c427d19d6aea09c7b19.png" alt="Politic" class="smallTitleImage">
+                        </label>
+                        <br>Since people come from different countries, educational background is diverse that sometimes is hard for one to tolerant. It can cause conflict between students and make life in RL suffering.
+                    </td>
+
+                    <td>
+                        <img src="images/issue-009-512.png" id="politicIssueImg" alt="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>
+                            <img src="images/smicon/sad32.svg" alt="☹">
+                            <img src="https://fontmeme.com/permalink/191124/14f933a18c47c54e641f569409f5a59a.png" alt="Privacy" class="smallTitleImage">
+                        </label>
+                        <p>
+                            <strong>
+                                <img src="images/smicon/smrdtriangle.svg" alt="△">8 persons in a room <img src="images/smicon/smrdtriangle.svg" alt="△">
+                            </strong>
+                            This is <span class="red">NOT WE ARE PAYING FOR.</span> People can see each other and it is crowded. It feels uncomfortable. 
+                            <br>Although the dorm is not vary bad.<strong class="red"> JUST NOT WORTH IT!!!!!!</strong> Host family is obivously better option.
+                            This is <strong class="red">NOT</strong> "Home away from home". In host family you get your own room, at here <u>you have to study in the common area.</u>
+                        </p>
+
+                    </td>
+                    <td>
+                        <!--250x179-->
+                        <img src="images/psb.jpg" alt="" id="dormImage1">
+                    </td>
+                </tr>
+                <!--Mail Delay-->
+                <tr>
+                    <td>
+                        <label>
+                            <img src="images/smicon/sad32.svg" alt="☹">
+                            <img src="images/title/maildelay.png" alt="mail delay" class="smallTitleImage">
+                        </label>
+                        <p>
+                            The mailroom is inconvenient in the dorm, every time we have to “persuade” them to get access to the mail. The front desk doesn’t deliver mail properly, the arrival time of packages is unpredictable, mail gets a mess and delay.
+                            <br><img src="images/smicon/redstar.svg" alt="★">If you care about the timeliness of your package you shop from either Amazon, Nike or anywhere else, the dorm is a bad choice for you. 
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <!--Harsh Punishments-->
+                <tr>
+                    <td>
+                        <label>
+                            <img src="images/smicon/sad32.svg" alt="☹">
+                            <img src="images/title/harshPunishment.png" alt="punishment" class="smallTitleImage">
+                        </label>
+
+                        <p>
+                            It is much easier to get a detention in the res life than in high school. In the res life,
+                            you get detention for coming back to dorm late, and in the morning if you are late to get out
+                            of the dorm for even one minute. If those late 3 times you get a detention. Also, if your room is
+                            not clean enough you get detention either. But in highschool you have to get 3 referrals to get a detention.
+                            And RL detention is at 6 am and you will be waken up at 5, very hard and makes people tired.
+                        </p>
+                        <button class="centralizedImage" onclick="showDetentionVideo()"><img src="onclicksm1.svg" alt="">Watch Detention Video</button>
+
+                    </td>
+                    <td>
+                        <div id="detentionVideo"></div>
+                    </td>
+                </tr>
+
+                <tr>
+
+                    <td>
+                        <label>
+                            <img src="images/smicon/sad32.svg" alt="☹">
+                            <img src="images/title/wifi.png" alt="wifi" class="smallTitleImage">
+                        </label>
+                        <br><img src="images/smicon/redstar.svg" alt="★">The wifi is shared with highschool. You can get a better
+                        wifi service if you live with host family. Also, wifi in our school is monitored, and you will be required to install
+                        something in your device, everything you do is exposed to the school manager. 
+                    </td>
+
+                    <!--wifi image-->
+                    <td>
+                        <img src="images/hackwifi.png" id="hackWifiImage" alt="hack wifi">
+                    </td>
+
+                </tr>
+            </table>
+
+        </section>
+
+        <!--Image In between sections-->
+        <img class=" intersectionalImage" src="images/title/do not join.png" alt="never join res life.">
+
+        <section class="bodycontent" id="moreLiesSection">
+            <hgroup>
+                <h3>
+                    <img src="images/smicon/smrdflag.svg" alt="flag"> Some More Lies <img src="images/smicon/smrdflag.svg" alt="flag">
+                </h3>
+                <h4>
+                    <img src="images/smicon/redstar.svg" alt="★">Let's take a look at school website<img src="images/smicon/redstar.svg" alt="★">
+                </h4>
+            </hgroup>
+            <br>
+
+            <a href="https://www.nordangliaeducation.com/our-schools/houston/village-school/boarding/living-at-village/accommodations" target="about:blank">
+                <img class="centralizedImage" src="images/acc1.png"  alt="Accommodations" title="click to see original doc">
+            </a>
+
+            <p>
+                Quoted from the school website: <br>
+                " As part of the residential life program at The Village School,
+                your child will have extended opportunities to utilize The Village School’s <u class="hiddenTextButton" onclick="showHiddenText('reslifeScience')">innovative math and science programs,</u>
+                <span class="hiddenTexts" id="reslifeScience"><br><strong class="red">LIER!!!</strong>The resifential life program has no relationship to math and science program in the village highschool. Again, the "extended oppotunities" is a <span class="red">no-sense connection.</span></span>
+                integrated with <u class="hiddenTextButton" onclick="showHiddenText('reslifeArt')">fine arts and technology,</u>
+                <span class="hiddenTexts" id="reslifeArt">
+                    <br> How is reslife related to art? This is a perfect description for highschool.
+                </span>
+                as part of our <u class="hiddenTextButton" onclick="showHiddenText('villageLearner')">collaborative, diverse, nurturing family of learners. "</u>
+                <span class="hiddenTexts" id="villageLearner">
+                    <br> Hows that happening? This <span class="red">ONLY APPLIES TO HIGH SCHOOL!</span>
+                    <br><img src="images/smicon/smgreentick.svg" alt="✔">For that, in other words, live with a group of disruptive students.
+                </span>
+
+            </p>
+
+            <hr>
+
+            <!--Facility image-->
+            <img class="centralizedImage" src="images/reslifePool.png" alt="">
+
+
+            <p>
+                <strong class="red"> Gym = crowded.</strong>    
+                <br>Only open at certain times.
+                Less Comparative to the LA fitness close by.
+                <br><img src="images/smicon/x16.svg" alt="×"><span class="black">Also, the fee is included in the tuition even if you don't use it.</span>
+            </p>
+
+            <hr>
+            <!--More about the RL-->
+
+            <p>
+                Attending a boarding school can enrich your child’s development in many ways, 
+                <u class="hiddenTextButton" onclick="showHiddenText('rlMakeFriends')">from making lifelong friends with similarly motivated students,</u>
+                <span class="hiddenTexts" id="rlMakeFriends">
+                    <br>You can make more friends in highschool than in the rl. <br>
+                    <span class="black">
+                        <img src="images/smicon/redstar.svg" alt="★">
+                        If you enjoy to socialize in a crowded group of people, this is a benefit.
+                        <br>Else, RL is annoying to stay.
+                    </span>
+                </span>
+
+                to taking part in
+                <u class="hiddenTextButton" onclick="showHiddenText()">exciting field trips </u>
+                <span class="hiddenTexts" id="rlfieldtrip">
+                    <br>2 times a year, go in a crowded group.
+                    <strong class="red">
+                        With that price, why don't you go by yourself?
+                    </strong>
+                </span>
+                &nbsp;
+                <u class="hiddenTextButton" onclick="showHiddenText('rlIntExp')"> and international experiences.</u>
+                <span class="hiddenTexts" id="rlIntExp">
+                    <br> What is "international experience"?
+                </span>
+            </p>
+
+            <hr>
+
+            <img src="images/acc3.png" alt="Accomdation" class="centralizedImage">
+
+            <p>
+                Advertised: The Village School’s four-story 
+                dormitory for our residential life
+                students is 
+                <u class="hiddenTextButton" onclick="showHiddenText('rlcentral')">centrally located</u>
+                <span class="hiddenTexts" id="rlcentral">
+                    <br>The reslife is not centrally located! IT IS ON THE SIDE OF THE SCHOOL
+                </span>
+
+                for convenient access to school facilities 
+                <u class="hiddenTextButton" onclick="showHiddenText('rlAfterSchoolAct')">
+                    and after-school activities.
+                </u>
+                <span class="hiddenTexts" id="rlAfterSchoolAct">
+                    <br>Thank you, we still have to sign out in order to go anywhere. Also, after-school activity 
+                    does not need RL's help, 
+                    <strong class='black'>
+                        ALL STUDENTS CAN ACCESS
+                    </strong>
+                    Also, high school is the most convinent place for accessing after-school activities.
+                    <br>
+                    <img src="images/smicon/redstar.svg" alt="★">
+                    <span class='black'>
+                        After-school activity happens when we got off school, why do we need dorm though...
+                    </span>
+                </span>
+
+
+
+                Student suites have four bedrooms and two bathrooms 
+                <u class="hiddenTextButton" onclick="showHiddenText('rlroomcommonarea')">
+                    with a shared study area in each.
+                </u>
+                <span class="hiddenTexts" id="rlroomcommonarea">
+                    <br> common area is <span class='red'>noisy.</span>
+                    Dorm parents control is inefficient.
+                    Also, 8 persons in a room make allows each one less space.
+                    The picture on the website is a lie.
+                </span>
+
+                The  
+                <u class="hiddenTextButton" onclick="showHiddenText('rlLargeCommonSpace')">
+                    large common spaces
+                </u>
+                <span class="hiddenTexts" id="rlLargeCommonSpace">
+                    <br>This is not large. Also, it is usually loud.
+                </span>
+                on each floor allow for flexible use, such as  
+
+                <u class="hiddenTextButton" onclick="showHiddenText('rlRelax')">
+                    studying and relaxing,
+                </u>
+                <span class="hiddenTexts" id="rlRelax">
+                    Are you willing to study in a vegetable supermarket?
+                    <br>Are you willing to study when everyone is gaming.
+                    well, no.
+                    <strong class='red'>VERY ANNOYING!!!!!INTERNATIONAL GAME BAR
+                    </strong>
+                </span>
+
+                and have Wi-Fi among other amenities.
+
+                <u class='hiddenTextButton' onclick="showHiddenText('rlkitchen')">
+                    Each floor offers a kitchen, vending area and washer-dryers for student use.
+                </u>
+                <span class="hiddenTexts" id="rlkitchen">
+                    <br>The "kitchen"only have a microwave.
+                    <br>Only first floor have a vending machine.
+                    <br>Only second floor / 4th floor have 3 clothwashers. They are sometimes broken and get fixed slow.
+                </span>
+
+                The outside courtyard features 
+
+                <u class="hiddenTextButton" onclick="showHiddenText('grillarea')">a grill station/outdoor kitchen</u>
+                <span class="hiddenTexts" id="grillarea">
+                    <br> Although it is broke and rarely people use that...
+                </span>
+
+                <u class="hiddenTextButton" onclick="showHiddenText('rlentertain')"> and entertaining area.</u>
+                <span class="hiddenTexts" id="rlentertain">
+                    <br>It is just a piece of grass.
+                </span>
+
+            </p>
+
+
+
+            <article>
+                <h4>
+                    Wellness Resource
+                </h4>
+                Advertised: The state-of-the-art 46,000 square foot athletic center
+                includes a Varsity athletic gymnasium
+                with a full size collegiate regulation main court 
+                and two high school regulation cross courts
+                as well as a natatorium with a 25-yard competition pool.
+                In addition, the center has <u class="hiddenTextButton" onclick="showHiddenText('rlAcademicCenter')">academic spaces,</u>
+                <span class="hiddenTexts" id="rlAcademicCenter">
+                    <strong class="red">
+                        Never seen academic center in the gym.</strong> 
+                    <br>On the second floor there is an art classroom.
+                    All students have access to the room if they have class there. Otherwise, there is no spectial right for
+                    anyone.
+                </span>
+                locker rooms,
+                coaches offices, fitness spaces and training room.
+                The athletic center is adjacent to the dormitory 
+                and accessible for the residential students use. 
+                <br><button class="arrowbutton" onclick="showHiddenText('rlwellness')"><span>See Facts</span></button> 
+                <div class="hiddenTexts" id="rlwellness">
+                    <br>
+                    <ul class="starredList">
+                        <li>
+                            <strong class="red">
+                                RL STUDENTS NEVER CAN OPEN THE GYM DOOR AFTERSCHOOL.
+                            </strong>
+                        </li>
+
+                        <li>
+                            Additional fees apply on training classes.<br>Also there is sign-in and sign-outs procedure.
+                        </li>
+                        <li>
+                            All students can access the resources. There is a nice change room in the gym,
+                            which means quick, frequent access to the dorm is not necessary.
+                        </li>
+                        <li>
+                            RL students have access to the pool. The fee is included in the tuition even if you don't go.
+                            Also, it only opens at certain times, you need to adjust your schedule in order to use it.
+                        </li>
+                        <li>
+                            Usually you need to line up in the gym.
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <article>
+                <h4>
+                    Weekend Activities
+                </h4>
+
+            </article>
+
+            <article>
+                <h4>
+                    Breakfast
+                </h4>
+
+                <p>
+                    Advertised: Breakfast is a highlight to start each day at The Village School. 
+                    Both day students and residential students dine together and enjoy the chef’s creations such as scrambled eggs, 
+                    buttermilk pancakes, French toast, bacon, sausage,
+                    and breakfast potatoes 
+                    as well as 
+                    <u class="hiddenTextButton" onclick=""> specialty offerings such as Asian eggs and rice,</u>
+                    <span id="rlSpectialOffer">
+                        <br>
+                    </span>
+                    breakfast tacos, an omelet bar and a make your own waffle bar. We also offer an assortment of bagels, cold cereals,
+                    breakfast pastries, and a fresh fruit bar that includes low-fat yogurt.
+                </p>
+
+                <br><button class="arrowbutton" onclick="showHiddenText('rlBreakfast')">
+                    See Facts
+                </button>
+                <div class="hiddenTexts" id="rlBreakfast">
+                    <ul class="starredList">
+                        <li>
+                            Daily breakfast are almost identical. 
+                        </li>
+                        <li>
+                            Bakons are hard eat.
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <article>
+                <h4>
+                    Lunch and Dinner
+                </h4>
+                <p>
+                    Advertised:  At lunch and dinner, the salad bar features a bountiful display of fresh vegetables, condiments, and proteins. Our chef prepares homemade soups served daily, and a variety of accompaniments. Our popular deli station features a variety of sandwich selections and cheeses, with an assortment of breads, rolls, and wraps. 
+                    Students enjoy fresh sushi offered several days a week.
+                    Entrée specialties include items such as
+                    Norwegian salmon with saffron cream,
+                    Asian sesame chicken, beef enchiladas,
+                    pork and chicken pot stickers and shrimp jambalaya.
+                    Vegetarian options such as vegetable ettoufe’, stuffed shells with marinara, and vegetable egg rolls, are offered daily at both lunch and dinner.
+                </p>
+                <br>
+                <button class="arrowbutton" onclick="showHiddenText('rlDinner')">
+                    See Facts
+                </button>
+                <div class="hiddenTexts" id="rlDinner">
+                    <ul class="starredList">
+                        <li>
+                            If you do not join res life, you have more colorful options to choose like the delicions sandwish, Chick-fil-A, cookie and Thai fppd sold 
+                            in the school store. You can buy them in an affordable price without paying extra. Reslife students are forced to pay for Flik dining, even if you don't want.
+                        </li>
+                        <li>
+                            <strong class='red'>Sushi is not included in RL tuition.</strong>
+                        </li>
+                        <li>
+                            Daily offer one of the entrees. RL tuition offer limited choice.
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+
+
+        </section>
+
+        <img class="intersectionalImage" src="images/title/NObeautiful.png" alt="NOT BEAUTIFUL">
+
+        <!--Calculator-->
+        <section class="bodycontent">
+            <h3>
+                <img src="images/smicon/smrdflag.svg" alt="P">Let's See The Deal<img src="images/smicon/smrdflag.svg" alt="P">
+            </h3>
+
+            <strong id="selectWarning" class="red centralizedImage"></strong>
+
+            <table class="centralized">
+                <tr>
+                    <!--
+                    <td>
+                        <select class="centralizedImage" id="enrollDateSelect">
+                            <option value="-1" selected>
+                                Graduating year?  
+                            </option>
+
+                            <option value="2020">
+                                2020
+                            </option>
+
+                            <option value="2021">
+                                2021
+                            </option>
+
+                            <option value="2022">
+                                2022
+                            </option>
+
+                            <option value="2023">
+                                2023
+                            </option>
+
+                            <option value="2024">
+                                2024
+                            </option>
+
+                        </select>
+                    </td>
+                    <td>
+                        <select class="centralizedImage" id="graduatingSelect">
+                            <option value="-1" selected>
+                                Enrollment year? Or year Will Enroll?
+                            </option>
+
+                            <option value="2016.5">
+                                2017 Spring  
+                            </option>
+
+                            <option value="2017">
+                                2017  Fall
+                            </option>
+
+                            <option value="2017.5">
+                                2018 Spring  
+                            </option>
+
+                            <option value="2018">
+                                2018  Fall
+                            </option>
+
+                            <option value="2018.5">
+                                2019  Spring
+                            </option>
+
+                            <option value="2019">
+                                2019 Fall  
+                            </option>
+
+                            <option value="2019.5">
+                                2020 Spring  
+                            </option>
+
+                            <option value="2017">
+                                2020 Fall  
+                            </option>
+
+                            <option value="2020.5">
+                                2021 Spring
+                            </option>
+
+                            <option value="2021">
+                                2021  Fall
+                            </option>
+
+                        </select>
+
+                    </td>-->
+                    <td>
+                        <div class="animated-text-input-container">
+                            <input type="number" id="yearsInput" required title="Years" />
+                            <label class="label-name"><span class="content-name">How many years?</span></label>
+                        </div>
+                    </td>
+
+                    <td>
+                        <button class="arrowbutton" onclick="inputByYears();//">
+                            <span>
+                                Calculate
+                            </span>
+                        </button>
+                    </td>
+                </tr>
+            </table>
+
+
+
+
+
+        </section>
+
+        <section class="bodycontent hide" id="calculateResultSec" >
+            <article>
+                <h5>
+                    Dorm Costing As House
+                </h5>
+                The first year in dorm will cost you <strong class="red">$72,000</strong>.And following years will cost <strong class="red">$70,000</strong>per year.
+                So at total, you will spend $<strong class="blue"></strong> in the dorm.
+                But a luxury homestay does not cost that much.
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/homestay sp.jpg" id="homestaySp" alt="homestay img">
+                        </td>
+                        <td>
+                            <ul class="starredList">
+                                <li>
+                                    With the time your stay in dorm, you can stay in a good house for only $<strong id="homestayPrice"></strong>.
+                                </li>
+                                <li>
+                                    And you need insurance, an school-standard one will costs you about $<strong id="insurancePrice"></strong> In total till you graduate.
+                                </li>
+                                <li>
+                                    You need to eat. Say you spend $15 on food per day. You will spend $<strong id="foodCost"></strong>. 
+                                </li>
+                                <li>
+                                    Day Student tuition(high-school) is about $29,300 per year, for you, in total of $<strong id="dayTuition"></strong>.
+                                </li>
+                            </ul>
+                            So, you have $<strong id="moneyLeftForMendetory"></strong> left at last.
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+
+
+
+
+    </body>
+</html>
+
+<!--
+<u class="hiddenTextButton" onclick="showHiddenText()">
+                    
+                </u>
+                <span class="hiddenTexts" id="">
+                    
+                </span>
+-->

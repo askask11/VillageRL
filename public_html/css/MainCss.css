@@ -1,0 +1,460 @@
+/*Editor: Johnson Gao
+Date This Project Created:
+Description Of This Class:
+*/
+/* 
+    Created on : 2019-11-22, 19:17:45
+    Author     : Jianqing Gao
+*/
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+section
+{
+    display: block;
+}
+
+body
+{
+    color: #000000; 
+    background-color: #ffffcc; 
+    background-image: url("../images/background/wood.jpg");
+    background-position: center; 
+    background-size: 100%;
+    /*font-family: Georgia, times, serif;*/ 
+    line-height: 1.4em; 
+    margin: 0px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#titleImage
+{
+    margin: auto;
+    width:600px;
+    display: block;
+    margin-top: 50px;
+    
+}
+.bodycontent
+{
+    margin-left: 70px;
+    margin-right: 70px;
+    color:#000099;
+    background-color: #ffffff;
+    margin-top: 30px;
+    
+}
+
+.bodycontent h3
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*         -----     */
+/********************  POP UP CLASSES  ***********************/
+/*         -----     */
+/*define the entry of the pop up*/
+/*SURROUND THE AREA WHERE TO SHOW POP UP!!!*/
+.popup
+{
+    position: relative;/*SO IT CAN SHOW UP!!!*/
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/*The area to be popped up*/
+.popupArea
+{
+    visibility: hidden;/*Hide the text*/
+    width: 60%;/*the width of the area*/
+    background-color: #555;/*bg color*/
+    color: #fff;/*txt color*/
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;/*overfly the button,set on top*/
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+#covid-img-1,#covid-img-2
+{
+    /*display:none;*/
+}
+
+/*Hide/show the popup class*/
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+.hide2
+{
+    display:none;
+    visibility: hidden;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+.show{
+    display: inline-block;
+    visibility: visible;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/****** Buttton *********/
+
+/*Give a button arrow like*/
+.arrowbutton
+{
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+.arrowbutton span
+{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.arrowbutton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.arrowbutton:hover span {/*this part will take place when user hovers over it!*/
+    padding-right: 25px;
+}
+
+.arrowbutton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/**********        ANIMATED TEXT CONTAINER  ******************/
+.animated-text-input-container
+{
+    width: 50%;
+    position: relative;
+    height: 70px;
+    overflow: hidden;
+    text-align: left;
+}
+
+/*The container should behave differently when it is put into the table in order to fit inside.*/
+table .animated-text-input-container
+{
+    width:100%;
+}
+
+
+
+.animated-text-input-container input
+{
+    /*set the size so the form fill out through the div.*/
+    width: 100%;
+    height: 100%;
+    color: #595f6e;/*The text color in the form*/
+    padding-top: 10px;/*The space between the line and the input area*/
+    border: none;
+    /*outline: none;*/
+    background-color: inherit;/*So the form doesn't look weird, same color as background.*/
+
+}
+
+/*the positioning cannot be placed on the input itself, so we
+format the label around the textfield*/
+.animated-text-input-container label
+{
+    position: absolute;/*place it absolute so it covers the input*/
+    bottom:0px;/*the distance on the bottom between it and its ancestor (.form)*/
+    left:0%;/*the d from the left compate to its ancestor element*/
+    width: 100%;/*the width of the underline*/
+    height: 100%;/*the height of the label object we use to format the obj*/
+    /*background: blue;/*inside*/
+    pointer-events: none;/*so that the user doesn't click on the label itself.*/
+    border-bottom: 1px solid black;/*it is the underline of the input*/
+}
+
+.animated-text-input-container label::after
+{
+    content:"";/*create a fake content after ward.*/
+    position: absolute;
+    /*left: -1px;*/
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid blue;
+    transform: translateX(-100%);/*shift to the left for all of it.*/
+    transition: transform 0.3s ease;/*take 0.3 s to */
+}
+.content-name
+{
+    position: absolute;/*Effect: when user click on it, the input start to take place, then the text would go up*/
+    bottom: 5px;/*the distance of bottom between the text and its ancestor element(label)*/
+    left: 0px;/*the distance of left size between the text and its ancestor element(label)*/
+    transition: all 0.3s ease; /*except for the 0.3s,time of transit from the buttom to the top(as the input take place) by default.*/
+}
+
+.animated-text-input-container input:focus + .label-name .content-name ,/*when user click on it or when the textfield have some contents*/
+.animated-text-input-container input:valid+ .label-name .content-name 
+{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #9999ff;
+}
+.animated-text-input-container input:focus + .label-name::after , .animated-text-input-container input:valid + .label-name::after
+{
+    transform: translateX(0%);
+}
+
+
+
+
+
+
+h3
+{
+    color: #0000ff;
+}
+
+figcaption
+{
+    font-size: 15px;
+}
+
+
+                /*****About School*******/
+#aboutSchool
+{
+    border-style: dotted;
+    border-color: #9900cc;
+    border-width: 7px;
+    background-color: #ffffcc;
+    
+}
+
+#aboutRL1
+{
+    border-style: inset;
+    border-color: #ff66ff;
+    border-width: 5px;
+    background-color: #ffffcc;
+}
+
+#COVID19
+{
+    border-style: inset;
+    border-color: #ff66ff;
+    border-width: 5px;
+    background-color: #ffffcc;
+}
+
+#badAds
+{
+    border-style: dotted;
+    border-color: #0000ff;
+    border-width: 6px;
+    background-color: #ffff99;
+}
+
+.hiddenTexts
+{
+    display: none;
+    color: purple;
+    /*font-style: oblique;*/
+    /*animation:fadeEffect 0.3s;*/
+}
+
+
+.hiddenTextButton
+{
+    cursor: pointer;
+    color: #3333ff;
+}
+
+#moreLiesSect
+{
+    border-style: solid;
+    border-color: #cc33ff;
+    border-width: 5px;
+}
+
+#crowdgymImg
+{
+    width: 364px;
+    height: 200px;
+}
+#applydayImg
+{
+    width: 100%;
+    
+}
+
+#boardingDocImg
+{
+    border-style: groove;
+    border-width: 4px;
+    border-color: #3333ff;
+    display: block;
+    margin: auto;
+}
+
+#dormImage1
+{
+    width:250px;
+    height: 179px; 
+}
+
+/*the horzontal gap of the list*/
+.bodycontent li
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /*backlist-style-image: url("../images/smicon/smstar.svg");*/
+}
+
+.starredList li
+{
+    list-style-image: url("../images/smicon/smstar.svg");
+}
+
+
+.bodycontent h3
+{
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/**/
+#dboubtRL
+{
+    border-width: 6px;
+    border-style: double;
+    border-color: #ff66ff;
+}
+
+#politicIssueImg
+{
+    width: 181px;
+    height: 155px;
+}
+#hackWifiImage
+{
+    width: 246px;
+    height: 164px;
+}
+
+#rlThanksGivingImage
+{
+    width: 481px;
+    height: 227px;
+}
+
+#homestaySp
+{
+    width: 383px;
+    height:221px;
+}
+
+
+.intersectionalImage
+{
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.smallTitleImage
+{
+    height:32px;
+}
+
+
+/*Priority class*/
+.hide{display: none;}
+
+.showInline
+{
+    display: inline;
+    animation:fadeEffect 0.3s;
+}
+.centralizedImage , #detentionVideo
+{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.centralized
+{
+    margin: auto;
+    /*text-align: center;*/
+}
+
+
+
+.black{
+    color:black;
+}
+
+.red
+{
+    color: red;
+}
+.blue
+{
+    color:blue;
+}
+
+
+/*declears an "object" for animation
+For this effect, it should take 1 sec.*/
+@keyframes fadeEffect
+{
+    from
+    {
+        //initial state : opacity: 0;
+        opacity: 0;
+    }to
+    {
+        opacity: 1;//ending state: opacity: 1;
+    }
+}
