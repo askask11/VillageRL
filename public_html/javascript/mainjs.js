@@ -13,6 +13,10 @@ function showHiddenText(element)
 {
     document.getElementById(element).classList.toggle("showInline");
 }
+function dos()
+{
+
+}
 
 /**
  * Toggle a pop up frame.

@@ -15,7 +15,7 @@ section
 body
 {
     color: #000000; 
-    background-color: #ffffcc; 
+    background-color: #FFFFFF; 
     background-image: url("../images/background/wood.jpg");
     background-position: center; 
     background-size: 100%;
@@ -451,10 +451,10 @@ For this effect, it should take 1 sec.*/
 {
     from
     {
-        //initial state : opacity: 0;
+        /*initial state : opacity: 0;*/
         opacity: 0;
     }to
     {
-        opacity: 1;//ending state: opacity: 1;
+        opacity: 1;/*ending state: opacity: 1;*/
     }
 }
